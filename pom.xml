@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.library</groupId>
-	<artifactId>library-management</artifactId>
+	<artifactId>library-managementJava</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name/>
 	<description/>
