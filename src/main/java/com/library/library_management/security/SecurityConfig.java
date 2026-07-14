@@ -44,7 +44,7 @@ public class SecurityConfig {
                         .requestMatchers("/api/members/**").permitAll()
                         .requestMatchers("/api/books/**").permitAll()
                         .requestMatchers("/api/categories/**").permitAll()
-                        .requestMatchers("/api/borrowTransactions/**").permitAll()
+                        .requestMatchers("/api/BorrowTransactions/**").permitAll()
                         .requestMatchers("/api/user/**").permitAll()
 
                         .anyRequest().authenticated()
