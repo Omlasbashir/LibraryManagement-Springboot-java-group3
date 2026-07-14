@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/transactions")
+@RequestMapping("/api/borrowTransactions")
 //@CrossOrigin(origins = "*") // Tan waxay ka hortagtaa ciladaha CORS hadhow
 public class BorrowTransactionController {
 
