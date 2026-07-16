@@ -45,6 +45,10 @@ public class UserService {
         return userRepository.findById(id).orElseThrow(() -> new RuntimeException("User-ka lama helin!"));
     }
 
+    public User createUser(User user) {
+        return userRepository.save(user);
+    }
+
     public User updateUser(Integer id, User userDetails) {
         User user = getUserById(id);
         user.setFullName(userDetails.getFullName());

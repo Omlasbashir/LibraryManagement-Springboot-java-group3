@@ -1,4 +1,6 @@
 package com.library.library_management.entity;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -26,4 +28,10 @@ public class Book {
 
     @Column(name = "quantity", nullable = false)
     private Integer quantity = 0;
+
+    // Field dheeraad ah oo aan database-ka ku jirin,
+    // ujeedadiisu waa in laga soo qaato JSON-ka "categoryId" oo kaliya
+    @Transient
+    @JsonProperty("categoryId")
+    private Integer categoryId;
 }
